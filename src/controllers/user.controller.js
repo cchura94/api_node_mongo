@@ -27,12 +27,22 @@ async function funMostrar(req, res){
 
 }
 
-function funModificar(req, res){
-
+async function funModificar(req, res){
+    try {
+        const user = await Usuario.findByIdAndUpdate(req.params.id, req.body, {new: true});
+        return res.status(201).json({messaje: "Usuario Actualizado", user});
+    } catch (error) {
+        return res.status(500).json({error});
+    }
 }
 
-function funEliminar(req, res){
-
+async function funEliminar(req, res){
+    try {
+         await Usuario.findByIdAndDelete(req.params.id);
+        return res.status(201).json({messaje: "Usuario Eliminado"});
+    } catch (error) {
+        return res.status(500).json({error});
+    }
 }
 
 module.exports = {

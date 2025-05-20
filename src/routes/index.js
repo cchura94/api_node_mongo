@@ -11,6 +11,11 @@ Route.put("/usuario/:id", userController.funModificar);
 Route.delete("/usuario/:id", userController.funEliminar);
 
 // CRUD de Transacciones
+Route.get("/transaccion/filtro/:tipo/:monto", transaccionController.funGatosMayores);
+
+
+Route.get("/transaccion/:page", transaccionController.funListarPaginacion);
+
 Route.get("/transaccion", transaccionController.funListar);
 Route.post("/transaccion", transaccionController.funGuardar);
 Route.get("/transaccion/:id", transaccionController.funMostrar);

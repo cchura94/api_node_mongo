@@ -1,0 +1,23 @@
+GET http://127.0.0.1:3000/api/usuario
+
+### guardar
+POST http://127.0.0.1:3000/api/usuario
+Content-Type: application/json
+
+{
+    "nombre": "Pedro",
+    "correo": "Pedro@mail.com",
+    "fecha_creacion": "2025-01-01"
+}
+
+### modificar
+PUT http://127.0.0.1:3000/api/usuario/682be4ea452f36eec3343d78
+Content-Type: application/json
+
+{
+    "nombre": "Cristian MODIFICADO",
+    "correo": "cristian.modificado@mail.com"
+}
+
+### Eliminar
+DELETE http://127.0.0.1:3000/api/usuario/682be919f9ccf9a249a1e69e

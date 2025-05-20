@@ -1,0 +1,22 @@
+GET http://127.0.0.1:3000/api/transaccion
+
+### Nueva transaccion
+POST http://127.0.0.1:3000/api/transaccion
+Content-Type: application/json
+
+{
+    "usuarioId": "682be4ea452f36eec3343d78",
+    "tipo": "gasto",
+    "monto": 656.98,
+    "descripcion": "Compra Equipos",
+    "fecha": "2025-05-19",
+    "fecha_creacion": "2025-05-19"
+}
+
+### filtro
+
+GET http://127.0.0.1:3000/api/transaccion/filtro/gasto/856.97
+
+### paginacion
+
+GET http://127.0.0.1:3000/api/transaccion/1
