@@ -5,8 +5,8 @@ POST http://127.0.0.1:3000/api/usuario
 Content-Type: application/json
 
 {
-    "nombre": "Pedro",
-    "correo": "Pedro@mail.com",
+    "nombre": "Juan",
+    "correo": "juan@mail.com",
     "fecha_creacion": "2025-01-01"
 }
 

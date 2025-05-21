@@ -5,10 +5,10 @@ POST http://127.0.0.1:3000/api/transaccion
 Content-Type: application/json
 
 {
-    "usuarioId": "682be4ea452f36eec3343d78",
+    "usuarioId": "682d3c971508bde71f550f6e",
     "tipo": "gasto",
-    "monto": 656.98,
-    "descripcion": "Compra Equipos",
+    "monto": 150,
+    "descripcion": "Pago Deuda",
     "fecha": "2025-05-19",
     "fecha_creacion": "2025-05-19"
 }

@@ -47,6 +47,8 @@ async function funGatosMayores(req, res){
   return res.json(resultado);
 }
 
+
+
 module.exports = {
   funListar,
   funGuardar,
